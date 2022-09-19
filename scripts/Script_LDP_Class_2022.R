@@ -3,6 +3,8 @@ library(rdryad)
 #create directories
 dir.create("data/")
 dir.create("scripts/")
+dir.create("output/")
+dir.create("manuscript/")
 
 dir.create("data/url/")
 dir.create("data/dryad/")
@@ -29,3 +31,9 @@ usethis::create_from_github(repo_spec = "https://github.com/kguidonimartins/beta
 #creating a copy of the data file from github to personal data file
 system("cp -r~/School Work/Classes/Productivity+Reproduibility/Project/div/betadiv-enp* data/github/.")
 
+#starting to use groundhog
+library(groundhog)
+
+#running tinytex
+install.packages("tinytex")
+tinytex::install_tinytext()
