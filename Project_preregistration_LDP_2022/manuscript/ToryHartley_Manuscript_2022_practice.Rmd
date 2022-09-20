@@ -1,0 +1,87 @@
+---
+title: "Manuscript_LDP"
+author: "Tory Hartley-Cox"
+date: "`r Sys.Date()`"
+
+#practicing Formating in ecology letter format
+geometry: margin=1in
+header-includes:
+   - \usepackage{setspece}
+   - \doublespacing
+   - \usepackage{lineno}
+   - \linenumbers
+   - \usepackage{fontspec}
+   - \setmainfont{Times New Roman}
+ 
+  output:
+  pdf_document:
+    latex_engine: xelatex
+
+csl: https://www.zotero.org/styles/ecology-letters
+bibliography: Library_LivingDataProject.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(palmerpenguins) 
+library(GGally)
+library(kableExtra)
+```
+
+**Title:** Cool Science Paper
+
+Tory Hartley-Cox^~1~^, Second Author^2\*^
+
+1.  University of Regina
+2.  Royal Saskatchewan Museum
+
+\newpage
+
+# Abstract
+
+This is a practice assignment by Tory Hartley-Cox for the course Productivity and Reproducibility in Ecology and Evolution. All documents, folders and data presented are to demonstrate procedures and skills learned during the completion of class work and assignments. This is not meant to be a complete and finished manuscript for a real research project.
+
+# 
+
+# Introduction
+
+To demonstrate the ability to add an in-text citation to a manuscript in R markdown, I have copied the first paragraph of my introduction from my Master's research proposal. The in-text citation is not correct; it is to demonstrate.
+
+Since European colonization, the Canadian prairies have undergone three distinct waves of significant environmental changes. (1) Hunting and trapping removed large mammals, such as the Plains Bison (Bison bison bison) and the Plains wolf (Canis lupus nubilus), altering the complex patchwork of grassland habitat formed and maintained through grazing patterns[@alexandrino2019]. (2) The Federal government leased large areas of prairie for cattle grazing, further altering the grassland habitat due to critical differences in grazing patterns and intensities between domestic cattle (Bos taurus) and bison[@alexandrinoLargeTerrestrialBird2019; @alexandrino2019]. (3) An influx of land conversion for agriculture resulted in losing 80% of the historic 110,000km 2 of Canadian prairies by the 1990s[@guidenPredatorPreyInteractions2019]. Land conversion for agriculture has significantly slowed within the past two decades, but other land-use practices (e.g., Oil and natural gas extraction and urbanization) have increased in the region, further altering the Canadian Prairies[@guidenPredatorPreyInteractions2019; @flemingNovelPredationOpportunities2018; @alexandrino2019].
+
+# Methods
+
+# Results
+
+# Discussion
+
+# References
+
+::: {#refs}
+:::
+
+# Tables
+
+Table 1. Super Awesome Science table for the course Productivity and Reproducibility in Ecology and Evolution.
+
+```{r Table_01, echo=FALSE}
+
+  penguin_sum <- penguins %>%
+    group_by(island, year) %>%
+    summarize(mean_body_mass_g = mean(body_mass_g, na.rm = TRUE)) %>%
+    ungroup()
+  
+  kable(x = penguin_sum, 
+        col.names = c("Island","Year","Mean Body Mass (g)")) %>%
+    kable_styling(laxtex_options = "hold_position")
+```
+
+# Figure Captions
+
+# Figures
+
+![Figure 1. Super Awesome Science figure for the course Productivity and Reproducibility in Ecology and Evolution.](images/Map%20for%20porposal.jpg)
+
+# Appendices
