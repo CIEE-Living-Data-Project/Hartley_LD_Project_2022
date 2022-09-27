@@ -1,4 +1,7 @@
 library(rdryad)
+library(lubridate)
+library(dplyr)
+library(tidyverse)
 
 #running tinytex
 install.packages("tinytex")
@@ -15,7 +18,7 @@ dir.create("data/github/")
 #starting to use groundhog by downloading commonly used R packages 
 install.packages("groundhog")
 library(groundhog)
-groundhog.library(dplyr, date = "2022-08-31")
+groundhog.library("dplyr", date = "2022-08-31")
 groundhog.library("tidyverse", date = "2022-08-31")
 groundhog.library("ggplot2", date = "2022-08-31")
 

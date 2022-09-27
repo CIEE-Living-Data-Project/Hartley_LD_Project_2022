@@ -11,15 +11,13 @@ knitr::opts_chunk$set(echo = TRUE)
 
 This Document details the essential elements for a study plan for this practice assignment for the Productivity and Reproducibility in Ecology and Evolution.
 
-
-
 **Study Information**
 
 Some of the text information on this OSF page will be used from an ongoing Master's research project with the University of Regina to demonstrate my ability to follow the procedures to compete in a basic pre-registration project. My Master's research project does not have a suitable data set for the steps required for this assignment. A practice/demonstration data set for this assignment was selected because of the ease of transferring practice material to the final project for learning purposes. The data were collected from 1995 to 2009 by The Great Lakes Forestry Centre and Natural Resources Canada. The long-term monitoring study sampled multiple variables from within several stream catchments, but for the focus of this assignment, I only looked at the benthic invertebrate density. (more detail would be given for a real project)
 
 # **Design Plan**
 
-Data Collection was not required for this project; the project will use publicly available data. The data used for this practice assignment was downloaded from the Government of Canada\'s open repository, which can be found at (<https://open.canada.ca/data/en/dataset/576f1b52-3fce-497e-8e4c-0899acfdca1f>). With the dataset, I will plot the density over time for a representative benthic invertebrate genus, comparing harvested to non-harvested stream catchments. All data manipulation will be done in R studios, which will be uploaded to the GitHub repository, \"Hartley_LD_Project_2022\". (More detail would be given for a real project)
+Data Collection was not required for this project; the project will use publicly available data. The data used for this practice assignment was downloaded from the Government of Canada's open repository, which can be found at (<https://open.canada.ca/data/en/dataset/576f1b52-3fce-497e-8e4c-0899acfdca1f>). With the dataset, I will plot the density over time for a representative benthic invertebrate genus, comparing harvested to non-harvested stream catchments. All data manipulation will be done in R studios, which will be uploaded to the GitHub repository, "Hartley_LD_Project_2022". (More detail would be given for a real project)
 
 # 
 
@@ -28,6 +26,7 @@ Data Collection was not required for this project; the project will use publicly
 For the representative benthic invertebrate genus, I chose Chelifera. I will plot the density of Chelifera over time. The data set will be filtered only to include this species, and I will specify in the dataset whether or not the stream catchment was harvested. The open repository specifies that only catchments c31, c34L, and c34 were harvested, and the remainder of the catchments were unharvested. (More detail would be given for a real project)
 
 # 
+
 **Variables**
 
 Independent variable: time
@@ -38,11 +37,4 @@ Dependent variable: Harvest status (harvested or unharvested)
 
 # **Analysis Plan**
 
-I will use the ggplot2 package in R to plot density against time, plotting two time series for stream catchments that were or were not harvested. All data manipulation will be done in R studios, which will be uploaded to the GitHub repository, \"Hartley_LD_Project_2022\". (more detail would be given for a real project)
-
-
-
-
-
-
-
+I will use the ggplot2 package in R to plot density against time, plotting two time series for stream catchments that were or were not harvested. All data manipulation will be done in R studios, which will be uploaded to the GitHub repository, "Hartley_LD_Project_2022". (more detail would be given for a real project)
