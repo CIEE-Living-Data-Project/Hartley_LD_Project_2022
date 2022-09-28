@@ -1,0 +1,42 @@
+---
+title: "Manuscript_LDP"
+author: "Tory Hartley-Cox"
+date: "`r Sys.Date()`"
+
+#practicing Formating (in ecology letter format)
+geometry: margin=1in
+header-includes:
+  - \usepackage{setspece}
+  - \doublespacing
+  - \usepackage{lineno}
+  - \linenumbers
+
+output: pdf_document
+
+csl: https://www.zotero.org/styles/ecology-letters
+bibliography: Library_LivingDataProject.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Abstract
+
+# Introduction
+
+# Methods
+
+# Results
+
+# Discussion
+
+# References
+
+# Tables
+
+# Figure Captions
+
+# Figures
+
+# Appendices
